@@ -51,22 +51,18 @@ This project focuses on optimizing SVM parameters for a multi-class classificati
 
 ## Results Summary
 ### Results Table
-| Sample | Best Accuracy | Best Parameters                |
-|--------|----------------|-------------------------------|
-| S1     | 0.86           | {'kernel': 'rbf', 'nu': 0.23} |
-| S2     | ...            | ...                           |
-| ...    | ...            | ...                           |
+![image](https://github.com/user-attachments/assets/0d93f05e-03a0-4cee-a6b0-220978bd51d0)
 
-- Best performing sample: **S3**  
+- Best performing sample: **S1**  
 - Each row corresponds to a different train-test split.
-- `Best Accuracy` indicates the highest test accuracy achieved during optimization.
-- `Best Parameters` shows the kernel type and nu value selected by Optuna for that split.
+- **`Best Accuracy`** indicates the highest test accuracy achieved during optimization, i.e., **0.972833**.
+- **`Best Parameters`** shows the kernel type and nu value selected by Optuna for that split, i.e., **{'kernel': 'rbf', 'nu': 0.01091321533781647}**.
   
-- Convergence graph saved as `convergence_graph.png`
-- `convergence_graph.png` displays the optimization history for the best-performing sample (S3).
+### Convergence graph
+  ![image](https://github.com/user-attachments/assets/dc4da9a7-bd6d-4d2c-a4b5-77b60268ffe1)
+- `convergence_graph.png` displays the optimization history for the best-performing sample (S1).
 - The Y-axis shows the objective value (accuracy), and the X-axis shows the number of trials.
 - The plot helps visualize how quickly Optuna converged to the best solution.
-
 ---
 
 ## How to Use
